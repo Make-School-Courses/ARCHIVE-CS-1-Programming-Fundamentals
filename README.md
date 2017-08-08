@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-This course is designed to help equip students with the skills and knowledge necessary
+This course is designed to help equip students with the technical skills and foundational knowledge necessary
 to succeed at Make School.  As such, there are no prerequisites for this course.  
 
 ## Course Overview

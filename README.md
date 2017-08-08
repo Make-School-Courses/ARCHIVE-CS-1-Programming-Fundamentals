@@ -69,18 +69,17 @@ in each area:
 
 ### General Computer Science Knowledge
 
-Student(s) will be able to:
+**Student(s) will be able to:**
 
 * Select appropriate data types to create, manipulate, and store data.
 * Explain the trade-offs between interpreted and compiled languages, and use this knowledge to select appropriate languages for the task at hand.  
 * Convert numbers from Decimal to Binary, and from Binary to Decimal.  
 * Explain the importance of binary numbers in modern computing, and connect this to
 higher-level concepts used in their code such as boolean logic and conditional statements.  
-*
 
 ### Programming concepts
 
-Student(s) will be able to:
+**Student(s) will be able to:**
 
 * Write clean, well-structured code with semantic naming conventions for variables,
 functions, and objects.  
@@ -96,11 +95,9 @@ the benefits and drawbacks of each.
 * Assess the potential problems that can arise when making HTTP requests, and effectively
 deal with these problems using exceptions.
 
-
-
 ### Programming in Python
 
-Student(s) will be able to:
+**Student(s) will be able to:**
 
 * Write "clean, Pythonic" code that follows PEP8 conventions.
 * Apply their knowledge of Object-Oriented Programming to use inheritance to write "D.R.Y.", reusable code, including abstract superclasses.
@@ -141,15 +138,35 @@ Student(s) will be able to:
   with optional components including web servers and basic data visualization.  
 
 ### Vocabulary & Conventions
-<!-- TODO:  Complete Vocabulary section -->
+<!-- TODO: Complete this section -->
+
+
 
 ### Best Practices
 
-- List best practices
-- This is optional
+Success in this course (and at Make School!) happens because of growth through **_deliberate practice._**
+Coding is a muscle, and muscles only grow if you use them! Students in this course should find time to code
+_every day_!  This does not necessarily have to be on a project, or even on work for this course! Some of your
+most productive days will be days where you don't have any work assigned, and some of your biggest breakthroughs
+will come while coding for fun!
+
+For students seeking extra practice, I have included a list of my favorites in the _Resources_ section.
 
 ### Resources
-<!-- TODO:  Complete resources section -->
+
+Python 3 Documentation: For when you know what you want to say, but aren't sure of the correct syntax.
+
+Project Euler: A website of math-flavored programming challenges, where solutions for a problem will often act as
+helper functions for subsequent problems.  These are great for strengthening your problem solving and algorithmic skills--they're also very addicting!
+
+Coding Bat: A great place to practice programming by completing challenges in python.  
+
+Think Like a Computer Scientist:  A free, online text book in python that takes students from "Hello World" all the way to data structures and algorithms.  Students will occasionally be assigned readings from this textbook
+before class.  
+
+Atom: A free, open-source text editor from Github.  Although this is the recommended text editor for the course, students are free to use any text editor they feel comfortable with.  
+
+NOTE:  This is a living document, so resources may be added to this list throughout the year.  
 
 ### Evaluation    
 <!-- TODO:  Add links to project rubrics -->

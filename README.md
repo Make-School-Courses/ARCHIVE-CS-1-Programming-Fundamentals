@@ -55,7 +55,7 @@ applied to any language:
 
 Finally, this course will also cover the following high-level computer science concepts:
 
-* Pseudocode as an abstractions
+* Pseudocode as an abstraction
 * Advantages/disadvantages of interpreted vs. compiled languages
 * Language abstraction (High-level vs. low-level vs. assembly vs. machine code)
 * Binary number representations
@@ -118,23 +118,30 @@ Student(s) will be able to:
 * Call a web API and parse the JSON response.  
 
 ## Lessons
+<!-- TODO:  Backmap curricula onto course days -->
 
-- List your lessons here
-- Provide a link to each lesson
-- Use a list
 
 ### Projects
 
-- List all of the projects
-- Use a list
+1. **Hangman**
+  --Students will gain experience with abstraction, helper functions, data types,
+  string manipulation, collections, and other foundational concepts by coding up
+  a version of the classic "Hangman" game that can be played in the terminal.  
+
+2. **Object-Oriented Programming in a Zoo**
+  -- In this project, students will take advantage of Object-Oriented Programming to
+  build a system to help a zookeeper keep track of all the animals in a zoo.  This project
+  will place special emphasis on using Class-level abstractions, and creating clean, modular
+  code through the use of abstract classes, inheritance, and polymorphism.
+
+3. **Simulating Herd Immunity**  
+  -- For their final project, students will design and build a simulation that models a the spread
+  of a virus over a population to demonstrate the epidemiology concept of herd immunity.  This project will require students to
+  demonstrate mastery of all concepts covered in this course, and will stretch their programming skills
+  with optional components including web servers and basic data visualization.  
 
 ### Vocabulary & Conventions
-
-- List vocabulary
-- and definitions
-- for terms students
-- need to understand
-- This is optional
+<!-- TODO:  Complete Vocabulary section -->
 
 ### Best Practices
 
@@ -142,33 +149,19 @@ Student(s) will be able to:
 - This is optional
 
 ### Resources
+<!-- TODO:  Complete resources section -->
 
-Any resources to be used by students in class. Include:
+### Evaluation    
+<!-- TODO:  Add links to project rubrics -->
 
-- books
-- videos
-- blog posts
-- online articles
-- links to tutorials
-- other media
+In order to pass this course, students must successfully complete all three projects.  
+Each project will be evaluated according to a project-specific rubric, which can be found
+at the end of each project description.  
 
-### Evaluation
+Jump to:  
 
-Define what students need to do to pass this class.
-Be clear and accurate, avoid vague terms.
+Project 1: Hangman
 
-Make School does not provide grades but we do evaulate
-student work. Determine what work assigned in class is
-required to pass.
+Project 2: Object-Oriented Programming in a zoo
 
-All work must Must have Pass Fail Criteria!
-
-As a general guide list the number of projects and
-baseline challenges that must be completed to pass the
-class.
-
-Here is some more information on learning assessment.
-
-https://www.cte.cornell.edu/teaching-ideas/assessing-student-learning/measuring-student-learning.html
-
-- Use a list
+Project 3: Simulating Herd Immunity

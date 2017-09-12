@@ -116,7 +116,155 @@ deal with these problems using exceptions.
 
 ## Lessons
 <!-- TODO:  Backmap curricula onto course days -->
+*Class 1:*
+--Prework--
+N/A
 
+--In Class--
+Introductions
+Review Syllabus
+Set up git repo
+Install Ipython
+Python syntax
+Working in the terminal
+Control Flow/Loops/Functions
+PIP, packages, and import statements
+Benchmarking runtime
+
+--After Class--
+Complete the programming challenges given in class.
+
+--Stretch Challenge--
+Solve problem 1 on Projecteuler.net
+
+*Class 2:*
+
+--Prework--
+None
+
+--In Class--
+Problem solving strategies
+Problem Solving methodologies
+Scripting in python
+String manipulation
+Collections in Python
+
+--After Class--
+Complete the programming challenges given in class
+
+--Stretch Challenge--
+Complete problem 2 on projecteuler.net
+
+*Class 3:*
+--Prework--
+Read through the project guidelines for Hangman.
+
+--In Class--
+Helper functions
+Command Line Arguments
+
+--After Class--
+Continue working on Hangman project
+--Stretch Challenge--
+See Project Guidelines for stretch challenge.  
+
+*Class 4:*
+--Prework--
+Continue working on your Hangman project
+
+--In Class--
+Working Session: Hangman Project
+
+--After Class--
+Complete Hangman project and push to your git repo.  
+
+--Stretch Challenge--
+See Project Guidelines for stretch challenge.  
+
+*Class 5:*
+--Prework--
+
+--In Class--
+Object-Oriented Programming in Python
+Classes, Initializers, attributes, and methods
+
+--After Class--
+TBD
+--Stretch Challenge--
+TBD
+
+*Class 6:*   
+--Prework--
+
+--In Class--
+Subclasses
+Inheritance
+Abstract superclasses
+
+--After Class--
+TBD
+--Stretch Challenge--
+TBD
+
+*Class 7:*
+--Prework--
+Finish OOP In a Zoo tutorial
+--In Class--
+Working Session: OOP Gradebook project
+--After Class--
+Continue working on OOP Gradebook Project
+--Stretch Challenge--
+See Project Sheet for stretch challenge
+
+*Class 8:*
+--Prework--
+TBD
+--In Class--
+Working Session: OOP Gradebook project
+--After Class--
+Complete OOP Gradebook Project and push to git repo.  
+--Stretch Challenge--
+TBD
+
+*Class 9:*
+--Prework--
+TBD
+--In Class--
+TBD
+--After Class--
+TBD
+--Stretch Challenge--
+TBD
+*Class 10:*
+--Prework--
+TBD
+--In Class--
+TBD
+--After Class--
+TBD
+--Stretch Challenge--
+TBD
+
+*Class 11:*
+--Prework--
+
+--In Class--
+Working Session:  Herd Immunity Simulation
+--After Class--
+Continue Working on Herd Immunity Simulation project.
+--Stretch Challenge--
+See Project Guidelines for stretch challenge.  
+
+
+*Class 12:*
+--Prework--
+
+--In Class--
+Working Session:  Herd Immunity Simulation
+--After Class--
+Finish Herd Immunity Simulation and push to git repo.
+--Stretch Challenge--
+See Project Guidelines for stretch challenge.  
 
 ### Projects
 
@@ -125,11 +273,9 @@ deal with these problems using exceptions.
   string manipulation, collections, and other foundational concepts by coding up
   a version of the classic "Hangman" game that can be played in the terminal.  
 
-2. **Object-Oriented Programming in a Zoo**
+2. **Object-Oriented Programming Gradebook**
   -- In this project, students will take advantage of Object-Oriented Programming to
-  build a system to help a zookeeper keep track of all the animals in a zoo.  This project
-  will place special emphasis on using Class-level abstractions, and creating clean, modular
-  code through the use of abstract classes, inheritance, and polymorphism.
+  build a gradebook system to help a teacher keep track of their students. More details coming soon!
 
 3. **Simulating Herd Immunity**  
   -- For their final project, students will design and build a simulation that models a the spread
@@ -138,7 +284,11 @@ deal with these problems using exceptions.
   with optional components including web servers and basic data visualization.  
 
 ### Vocabulary & Conventions
-<!-- TODO: Complete this section -->
+Throughout the course, we will learn and make use of technical vocabulary.  Any technical words/topics/phrases
+worth remembering should be listed here.  Here's the catch:  they have to be added by you, the students.  I
+*strongly encourage* you to make pull requests to this document and add new definitions of vocabulary, examples of
+coding conventions, and anything you find useful.  This will give you a great cheat sheet to look back on as needed,
+while also strengthening your git skills!  
 
 
 
@@ -146,7 +296,7 @@ deal with these problems using exceptions.
 
 Success in this course (and at Make School!) happens because of growth through **_deliberate practice._**
 Coding is a muscle, and muscles only grow if you use them! Students in this course should find time to code
-_every day_!  This does not necessarily have to be on a project, or even on work for this course! Some of your
+_every day_.  This does not necessarily have to be on a project, or even on work for this course! Some of your
 most productive days will be days where you don't have any work assigned, and some of your biggest breakthroughs
 will come while coding for fun!
 
@@ -161,7 +311,7 @@ helper functions for subsequent problems.  These are great for strengthening you
 
 Coding Bat: A great place to practice programming by completing challenges in python.  
 
-Think Like a Computer Scientist:  A free, online text book in python that takes students from "Hello World" all the way to data structures and algorithms.  Students will occasionally be assigned readings from this textbook
+Think Like a Computer Scientist:  A free, online text book in python that takes students from "Hello World" all the way to data structures and algorithms.  Students may occasionally be assigned readings from this textbook
 before class.  
 
 Atom: A free, open-source text editor from Github.  Although this is the recommended text editor for the course, students are free to use any text editor they feel comfortable with.  

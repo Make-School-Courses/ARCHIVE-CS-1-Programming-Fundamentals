@@ -116,7 +116,7 @@ deal with these problems using exceptions.
 
 ## Lessons
 <!-- TODO:  Backmap curricula onto course days -->
-*Class 1:*
+**Class 1:**
 --Prework--
 N/A
 
@@ -137,7 +137,7 @@ Complete the programming challenges given in class.
 --Stretch Challenge--
 Solve problem 1 on Projecteuler.net
 
-*Class 2:*
+**Class 2:**
 
 --Prework--
 None
@@ -148,53 +148,70 @@ Problem Solving methodologies
 Scripting in python
 String manipulation
 Collections in Python
+Using the random module
 
 --After Class--
-Complete the programming challenges given in class
+Complete the Roulette game programming challenge started in class.  
 
 --Stretch Challenge--
 Complete problem 2 on projecteuler.net
 
-*Class 3:*
+**Class 3:**
 --Prework--
+Complete Roulette mini-project
 Read through the project guidelines for Hangman.
 
 --In Class--
+Discussion: Pain points found during roulette project.
+  - What was challenging about this project?
+  - Why did students make the structural choices they did in writing this program?
+  - What effect did vague instructions have on their process?
+  - What did we learn from this experience?
 Helper functions
 Command Line Arguments
 
 --After Class--
-Continue working on Hangman project
+Complete the hangman project before the start of next class.
+
 --Stretch Challenge--
 See Project Guidelines for stretch challenge.  
 
-*Class 4:*
+**Class 4:**
 --Prework--
-Continue working on your Hangman project
+Complete hangman project if you haven't already.
 
 --In Class--
-Working Session: Hangman Project
+Peer Code review session: Hangman project.
+  - Students will partner up with someone else and give a code review, following
+    the best practices outlined in class.
+Introduction to unit testing:  Red-Green-Refactor  
 
 --After Class--
 Complete Hangman project and push to your git repo.  
 
 --Stretch Challenge--
-See Project Guidelines for stretch challenge.  
+See Project Guidelines for stretch challenge.   
 
-*Class 5:*
+**Class 5:**
 --Prework--
+Read this article on why Object-Oriented Programming is useful to developers.  
 
 --In Class--
 Object-Oriented Programming in Python
 Classes, Initializers, attributes, and methods
 
 --After Class--
-TBD
---Stretch Challenge--
-TBD
+Complete "Object-Oriented Programming in a Zoo" tutorial exercise
 
-*Class 6:*   
+--Stretch Challenge--
+Try to solve Project Euler problem 3 (hint: think about all the ways to generate prime numbers!)
+
+**Class 6:**
+# TODO: add link to article   
+#https://www.roberthalf.com/blog/salaries-and-skills/4-advantages-of-object-oriented-programming
 --Prework--
+Complete "Object-Oriented Programming in a Zoo" tutorial exercise.
+Read this article on the 4 benefits of OOP.  
 
 --In Class--
 Subclasses
@@ -202,31 +219,45 @@ Inheritance
 Abstract superclasses
 
 --After Class--
-TBD
---Stretch Challenge--
-TBD
+Pick a team sport with different positions.  Use Abstract Superclasses, Inheritance, and polymorphism to model this team in code.  
 
-*Class 7:*
+--Stretch Challenge--
+Attempt Project Euler Problem Problem 4.  
+
+**Class 7:**
 --Prework--
-Finish OOP In a Zoo tutorial
+Finish OOP sports team assignment if you haven't already.  
+
 --In Class--
 Working Session: OOP Gradebook project
+
 --After Class--
 Continue working on OOP Gradebook Project
+
 --Stretch Challenge--
 See Project Sheet for stretch challenge
 
-*Class 8:*
+**Class 8:**
 --Prework--
 TBD
 --In Class--
 Working Session: OOP Gradebook project
 --After Class--
+
 Complete OOP Gradebook Project and push to git repo.  
 --Stretch Challenge--
-TBD
+Complete Project Euler Problem 5
 
-*Class 9:*
+**Class 9:**
+--Prework--
+
+--In Class--
+
+--After Class--
+
+--Stretch Challenge--
+
+**Class 10:**
 --Prework--
 TBD
 --In Class--
@@ -235,17 +266,8 @@ TBD
 TBD
 --Stretch Challenge--
 TBD
-*Class 10:*
---Prework--
-TBD
---In Class--
-TBD
---After Class--
-TBD
---Stretch Challenge--
-TBD
 
-*Class 11:*
+**Class 11:**
 --Prework--
 
 --In Class--
@@ -256,7 +278,7 @@ Continue Working on Herd Immunity Simulation project.
 See Project Guidelines for stretch challenge.  
 
 
-*Class 12:*
+**Class 12:**
 --Prework--
 
 --In Class--

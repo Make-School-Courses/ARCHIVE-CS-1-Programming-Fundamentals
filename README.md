@@ -207,8 +207,7 @@ Complete "Object-Oriented Programming in a Zoo" tutorial exercise
 Try to solve Project Euler problem 3 (hint: think about all the ways to generate prime numbers!)
 
 **Class 6:**
-# TODO: add link to article   
-#https://www.roberthalf.com/blog/salaries-and-skills/4-advantages-of-object-oriented-programming
+<!-- TODO: add link to article https://www.roberthalf.com/blog/salaries-and-skills/4-advantages-of-object-oriented-programming -->
 --Prework--
 Complete "Object-Oriented Programming in a Zoo" tutorial exercise.
 Read this article on the 4 benefits of OOP.  
@@ -283,8 +282,10 @@ See Project Guidelines for stretch challenge.
 
 --In Class--
 Working Session:  Herd Immunity Simulation
+
 --After Class--
 Finish Herd Immunity Simulation and push to git repo.
+
 --Stretch Challenge--
 See Project Guidelines for stretch challenge.  
 

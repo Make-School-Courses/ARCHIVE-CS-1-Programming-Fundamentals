@@ -1,33 +1,39 @@
-import student
+from student import Student
 import pytest
 
 def setup_for_test():
-    student = Student("Student McStudentFace")
+    student = Student("Student McStudentFace", 1)
     return student
 
 def test_setup():
     student = setup_for_test()
     assert student.name == "Student McStudentFace"
+    assert student.student_ID == 1
     assert student.grade_in_class == None
     assert len(student.assignments) == 0
 
 def test_give_student_assignment():
-    '''test adding a new assignment to a student '''
+    '''test adding a new assignment to a student, and retrieving grades from assignment dictionary'''
     student = setup_for_test()
     student.add_assignment('HW1', 100)
     assert student.assignments['HW1'] == 100
-    student.add_assignment('Test1', )
-
-def test_get_grade_on_assignment():
-    '''test retreiving student grade on assignment '''
-    student = setup_for_test()
+    student.add_assignment('Test1', 80)
+    assert student.assignments['Test1'] == 80
+    assert len(student.assignments) == 2
 
 def test_delete_assignment():
     student = setup_for_test()
+    student.add_assignment('HW1', 100)
+    student.add_assignment('Test1', 100)
+    student.delete_assignment('HW1')
+    assert len(student.assignments) == 1
+    student.delete_assignment('Test1')
+    assert len(student.assignments) == 0
 
 def test_update_grade_for_assignment():
     '''test updating a grade for a student's assignment '''
     student = setup_for_test()
+    
 
 def test_get_GPA():
     '''tests getting student's average in the class '''

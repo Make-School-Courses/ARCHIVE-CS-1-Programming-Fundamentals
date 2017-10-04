@@ -55,6 +55,12 @@ def _update_grade_in_class():
     num_assignments = len(self.assignments)
     self.grade_in_class = (point_total / num_assignments)
 
-def add_assignment(self, name, grade):
+def update_grade_for_assignment(self, assignment_name, grade):
+    pass
+
+def delete_assignment(self, assignment_name):
+    pass
+
+def add_assignment(self, assignment_name, grade):
     self.assignments[name] = grade
     self._update_grade_in_class()

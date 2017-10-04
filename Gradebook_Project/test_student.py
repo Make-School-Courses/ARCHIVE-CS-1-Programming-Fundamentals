@@ -1,17 +1,22 @@
 import student
 import pytest
 
-def test_student_creation():
-    student = Student("Sky")
-    assert student
-
 def setup_for_test():
-    student = Student("Sky")
+    student = Student("Student McStudentFace")
     return student
+
+def test_setup():
+    student = setup_for_test()
+    assert student.name == "Student McStudentFace"
+    assert student.grade_in_class == None
+    assert len(student.assignments) == 0
 
 def test_give_student_assignment():
     '''test adding a new assignment to a student '''
     student = setup_for_test()
+    student.add_assignment('HW1', 100)
+    assert student.assignments['HW1'] == 100
+    student.add_assignment('Test1', )
 
 def test_get_grade_on_assignment():
     '''test retreiving student grade on assignment '''

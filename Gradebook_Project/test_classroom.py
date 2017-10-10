@@ -59,7 +59,17 @@ def test_drop_assignment_for_class():
         assert len(student.assignments) == 0
 
 def test_get_student_GPA():
-    pass
+    classroom = setup_for_test()
+    classroom.roster[1].add_assignment('hw1', 100)
+    classroom.roster[1].add_assignment('test1', 80) # expected GPA is 90
+    assert classroom.roster[1].assignments['hw1'] == 100
+    assert classroom.roster[1].assignments['test1'] == 80
+    assert classroom.get_student_GPA("John Doe") == 90
 
 def test_get_class_average():
-    pass
+    classroom = setup_for_test()
+    classroom.roster[1].add_assignment('hw1', 100)
+    classroom.roster[1].add_assignment('test1', 80) # student 1 GPA is 90
+    classroom.roster[2].add_assignment('hw1', 90)
+    classroom.roster[2].add_assignment('test1', 70) # student 2 GPA is 80
+    assert classroom.get_class_average() == 85  # expected class avg is 85

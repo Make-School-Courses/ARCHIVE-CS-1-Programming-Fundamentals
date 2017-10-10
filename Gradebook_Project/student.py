@@ -54,7 +54,10 @@ class Student(object):
     def _update_grade_in_class(self):
         point_total = sum(list(self.assignments.values()))
         num_assignments = len(self.assignments)
-        self.GPA = (point_total / num_assignments)
+        if num_assignments == 0:
+            self.GPA = None
+        else:
+            self.GPA = (point_total / num_assignments)
 
     def update_grade_for_assignment(self, assignment_name, grade):
         if assignment_name in self.assignments:

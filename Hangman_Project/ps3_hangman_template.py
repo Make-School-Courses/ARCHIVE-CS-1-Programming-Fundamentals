@@ -1,38 +1,28 @@
 import random
 
-def loadWord():
+def load_word():
    f = open('words.txt', 'r')
-   wordsList = f.readlines()
+   words_list = f.readlines()
    f.close()
 
-   wordsList = wordsList[0].split(' ')
-   secretWord = random.choice(wordsList)
-   return secretWord
+   words_list = words_list[0].split(' ')
+   secret_word = random.choice(words_list)
+   return secret_word
 
-
-
-
-
-
-
-
-
-
-
-
-def isWordGuessed(secretWord, lettersGuessed):
+def is_word_guessed(secret_word, letters_guessed):
     '''
     secretWord: string, the random word the user is trying to guess.  This is selected on line 9.
     lettersGuessed: list of letters that have been guessed so far.
     returns: boolean, True only if all the letters of secretWord are in lettersGuessed;
       False otherwise
     '''
+    for letter in secret_word:
+        if letter not in letters_guessed:
+            return False
+    return True
     # FILL IN YOUR CODE HERE...
 
-
-
-
-def getGuessedWord(secretWord, lettersGuessed):
+def get_guessed_word(secret_word, letters_guessed):
     '''
     secretWord: string, the random word the user is trying to guess.  This is selected on line 9.
     lettersGuessed: list of letters that have been guessed so far.
@@ -41,20 +31,31 @@ def getGuessedWord(secretWord, lettersGuessed):
     in the word that the user has not yet guessed, shown an _ (underscore) instead.
     '''
     # FILL IN YOUR CODE HERE...
+    guessed_word = ""
+    for letter in secret_word:
+        if letter in letters_guessed:
+            guessed_word += letter + " "
+        else:
+            guessed_word += "_ "
+    return guessed_word
 
 
 
-
-def getAvailableLetters(lettersGuessed):
+def get_available_letters(letters_guessed):
     '''
     lettersGuessed: list of letters that have been guessed so far
     returns: string, comprised of letters that represents what letters have not
       yet been guessed.
     '''
+    available_letters = list('abcdefghijklmnopqrstuvwxyz')
+    for letter in letters_guessed:
+        if letter in available_letters:
+            available_letters.remove(letter)
+    return available_letters
 
 
 
-def hangman(secretWord):
+def hangman(secret_word):
     '''
     secretWord: string, the secret word to guess.
 
@@ -74,6 +75,7 @@ def hangman(secretWord):
     '''
     # FILL IN YOUR CODE HERE...
 
-
-secretWord = loadWord()
-hangman(loadWord())
+    
+#
+# secret_word = load_word()
+# hangman(load_word())

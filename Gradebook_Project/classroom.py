@@ -74,12 +74,11 @@ class Classroom(object):
         self.class_name = class_name
         self.teacher_name = teacher_name
         self.class_day_and_time = class_day_and_time
-        self.next_available_student_number = 0
+        self.next_available_student_number = 1
         self.roster = {}
 
     def enroll_student(self, student_name):
-        new_student = Student(student_name)
-        new_student.student_ID = self.next_available_student_number
+        new_student = Student(student_name, self.next_available_student_number)
         self.next_available_student_number += 1
         self.roster[new_student.student_ID] = new_student
         print(new_student.name + ' enrolled successfully!')

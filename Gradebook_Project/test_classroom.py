@@ -29,7 +29,12 @@ def test_enroll_student():
     assert 3 in classroom.roster
 
 def test_add_assignment_for_student():
-    pass
+    classroom = setup_for_test()
+    classroom.add_assignment_for_student("John Doe", "hw1", 100)
+    john = classroom.roster[1]
+    assert john.GPA == 100
+    assert len(john.assignments) == 1
+    assert john.assignments['hw1'] == 100
 
 def test_add_assignment_for_class():
     pass

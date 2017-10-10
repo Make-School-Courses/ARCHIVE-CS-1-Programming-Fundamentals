@@ -1,3 +1,4 @@
+
 class Student(object):
     '''Class of student objects that will populate each class roster.
 
@@ -9,7 +10,7 @@ class Student(object):
 
     name: String.  The name of the student.
 
-    grade_in_class: Float.  A running average of the student's overall grade in the class. Will be set to None
+    GPA: Float.  A running average of the student's overall grade in the class. Will be set to None
         until an assignment has been graded and passed to the Assignments dictionary.
 
     assignments: Dictionary {Assignment name (Str): Grade (Float)}.  A record of all assignments
@@ -18,10 +19,10 @@ class Student(object):
 
     _____Methods________
 
-        __init__(self, name):
-            -Requires the student's name passed as a string.
-            -Requires the student's number passed as an Int.
-            -Initially sets grade_in_class to None.
+        __init__(self, name, student_ID):
+            -Requires the student's name passed as a String.
+            -Requires the student's student_ID number passed as an Int.
+            -Initially sets GPA to None.
             -Initially sets Assignments to an empty Dictionary.
 
         add_assignment(name, grade):
@@ -41,24 +42,33 @@ class Student(object):
         _update_grade_in_class():
         Expects no inputs.
         Calculates the student's grade in class by dividing the student's cumulative assignment scores
-            by the number of total assignments in the Assignment Dictionary.
+            by the number of total assignments in the Assignment Dictionary. Updates self.GPA with this
+            value.
      '''
     def __init__(self, name, student_ID):
          self.name = name
          self.student_ID = student_ID
-         self.grade_in_class = None
+         self.GPA = None
          self.assignments = {}
 
     def _update_grade_in_class(self):
         point_total = sum(list(self.assignments.values()))
         num_assignments = len(self.assignments)
-        self.grade_in_class = (point_total / num_assignments)
+        self.GPA = (point_total / num_assignments)
 
     def update_grade_for_assignment(self, assignment_name, grade):
-        pass
+        if assignment_name in self.assignments:
+            self.assignments[assignment_name] = grade
+            self._update_grade_in_class()
+        else:
+            print("The student does not have any assignment by that name!")
 
     def delete_assignment(self, assignment_name):
-        pass
+        if assignment_name in self.assignments:
+            self.assignments.pop(assignment_name, None)
+            self._update_grade_in_class()
+        else:
+            print("The student does not have any assignment by that name!")
 
     def add_assignment(self, assignment_name, grade):
         self.assignments[assignment_name] = grade

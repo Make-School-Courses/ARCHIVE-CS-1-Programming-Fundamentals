@@ -23,6 +23,9 @@ def test_enroll_student():
     classroom = setup_for_test()
     classroom.enroll_student("Steve")
     assert len(classroom.roster) == 3
+    student_added = classroom.roster[3]
+    assert student_added.name == "Steve"
+    assert student_added.student_ID == 3
     assert 3 in classroom.roster
 
 def test_add_assignment_for_student():

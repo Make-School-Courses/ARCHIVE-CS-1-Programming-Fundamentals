@@ -88,17 +88,41 @@ class Classroom(object):
         '''Adds an assignment and corresponding grade for an individual student.'''
         pass
 
+    def _is_valid_grade(self, grade):
+        try:
+            valid_grade = float(grade)
+            if valid_grade >= 0:
+                return true
+        except ValueError:
+            return false
+
     def add_assignment_for_class(self, assignment_name):
-        pass
+        for student in self.roster.values():
+            grade = ""
+            while not _is_valid_grade(grade):
+                grade = float(input("Enter {}'s grade for {}: ".format(student.name,
+                                                                       assignment_name)))
+
 
     def drop_assignment_for_student(self, student_name, assignment_name):
-        pass
+        for student in self.roster.values():
+            if student.name == student_name:
+                student.delete_assignment(assignment_name)
 
     def drop_assignment_for_class(self, assignment_name):
-        pass
+        for student in self.roster.values():
+            student.delete_assignment(assignment_name)
 
     def get_student_GPA(self, student_name):
-        pass
+        for student in self.roster.values():
+            if student.name == student_name:
+                return student.GPA
 
     def get_class_average(self):
-        pass
+        if len(self.roster) == 0:
+            print("There are no students enrolled in this class!")
+            return None
+        else:
+            point_total = sum([i.GPA for i in self.roster.values()])
+            class_average = point_total / len(self.roster)
+            return class_average

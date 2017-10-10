@@ -5,21 +5,22 @@ def setup_for_test():
     student = Student("Student McStudentFace", 1)
     return student
 
-def test_setup():
-    student = setup_for_test()
+def test_init_student():
+    student = Student("Student McStudentFace", 1)
     assert student.name == "Student McStudentFace"
     assert student.student_ID == 1
-    assert student.grade_in_class == None
+    assert student.GPA == None
     assert len(student.assignments) == 0
 
-def test_give_student_assignment():
-    '''test adding a new assignment to a student, and retrieving grades from assignment dictionary'''
+def test_add_assignment():
     student = setup_for_test()
-    student.add_assignment('HW1', 100)
-    assert student.assignments['HW1'] == 100
-    student.add_assignment('Test1', 80)
-    assert student.assignments['Test1'] == 80
+    student.add_assignment('hw1', 100)
+    assert student.assignments['hw1'] == 100
+    assert len(student.assignments) == 1
+    student.add_assignment('hw2', 90)
+    assert student.assignments['hw2'] == 90
     assert len(student.assignments) == 2
+
 
 def test_delete_assignment():
     student = setup_for_test()
@@ -33,7 +34,7 @@ def test_delete_assignment():
 def test_update_grade_for_assignment():
     '''test updating a grade for a student's assignment '''
     student = setup_for_test()
-    
+
 
 def test_get_GPA():
     '''tests getting student's average in the class '''

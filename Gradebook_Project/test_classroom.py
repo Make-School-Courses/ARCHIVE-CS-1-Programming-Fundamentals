@@ -3,13 +3,27 @@ from classroom import Classroom
 import pytest
 
 def setup_for_test():
-    pass
+    new_classroom = Classroom("CS1", "Mike Kane", "Tu/Th 4-6pm PST")
+    new_student_1 = Student("John Doe", 1)
+    new_student_2 = Student("Jane Doe", 2)
+    new_classroom.next_available_student_number = 3
+    new_classroom.roster[1] = new_student_1
+    new_classroom.roster[2] = new_student_2
+    return new_classroom
 
 def test_setup():
-    pass
+    classroom = setup_for_test()
+    assert classroom.class_name == "CS1"
+    assert classroom.next_available_student_number == 3
+    assert classroom.teacher_name == "Mike Kane"
+    assert len(classroom.roster) == 2
+    assert classroom.class_day_and_time == "Tu/Th 4-6pm PST"
 
 def test_enroll_student():
-    pass
+    classroom = setup_for_test()
+    classroom.enroll_student("Steve")
+    assert len(classroom.roster) == 3
+    assert 3 in classroom.roster
 
 def test_add_assignment_for_student():
     pass
@@ -17,7 +31,7 @@ def test_add_assignment_for_student():
 def test_add_assignment_for_class():
     pass
 
-def test drop_assignment_for_student():
+def test_drop_assignment_for_student():
     pass
 
 def test_drop_assignment_for_class():

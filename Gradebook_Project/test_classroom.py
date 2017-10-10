@@ -37,16 +37,26 @@ def test_add_assignment_for_student():
     assert john.assignments['hw1'] == 100
 
 def test_add_assignment_for_class():
+    # Not going to bother writing this test because I'm not crazy enough to introduce
+    # monkeypatching to new students during a CS1 Course.
     pass
 
 def test_drop_assignment_for_student():
-    pass
+    classroom = setup_for_test()
+    for student in classroom.roster.values():
+        student.add_assignment('hw1', 100)
+        assert student.assignments['hw1'] == 100
+    classroom.drop_assignment_for_student("John Doe", 'hw1')
+    assert len(classroom.roster[1].assignments) == 0
 
 def test_drop_assignment_for_class():
-    pass
-
-def test__is_valid_grade():
-    pass
+    classroom = setup_for_test()
+    for student in classroom.roster.values():
+        student.add_assignment('hw1', 100)
+        assert student.assignments['hw1'] == 100
+    classroom.drop_assignment_for_class('hw1')
+    for student in classroom.roster.values():
+        assert len(student.assignments) == 0
 
 def test_get_student_GPA():
     pass

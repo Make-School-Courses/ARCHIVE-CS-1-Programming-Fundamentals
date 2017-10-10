@@ -85,7 +85,9 @@ class Classroom(object):
 
     def add_assignment_for_student(self, student_name, assignment_name, grade):
         '''Adds an assignment and corresponding grade for an individual student.'''
-        pass
+        for student in self.roster.values():
+            if student.name == student_name:
+                student.add_assignment(assignment_name, grade)
 
     def _is_valid_grade(self, grade):
         try:

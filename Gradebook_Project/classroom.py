@@ -103,6 +103,7 @@ class Classroom(object):
             while not _is_valid_grade(grade):
                 grade = float(input("Enter {}'s grade for {}: ".format(student.name,
                                                                        assignment_name)))
+            student.add_assignment(assignment_name, grade)
 
 
     def drop_assignment_for_student(self, student_name, assignment_name):

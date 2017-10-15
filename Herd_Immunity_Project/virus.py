@@ -1,0 +1,2 @@
+class virus(object):
+    pass

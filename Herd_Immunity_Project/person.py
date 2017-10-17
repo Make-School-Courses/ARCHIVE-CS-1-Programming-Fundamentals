@@ -29,7 +29,7 @@ class Person(object):
             the object should create a Virus object and set it as the value for
             self.infection.  Otherwise, self.infection should be set to None.
 
-    resolve_infection(self):
+    did_survive_infection(self):
         - Only called if infection attribute is not None.
         - Takes no inputs.
         - Generates a random number between 0 and 1.
@@ -38,19 +38,20 @@ class Person(object):
             - If random number is smaller, person has died from disease.
                 is_alive is changed to false.
             - If random number is larger, person has survived disease.  Person's
-            is_vaccinated attribute is changed to true.
+            is_vaccinated attribute is changed to True, and set self.infected to None.
     '''
 
-    def __init__(self, _id, is_vaccinated, infection=None):
+    def __init__(self, _id, is_vaccinated, infected=None):
         # TODO:  Finish this method.  Follow the instructions in the class documentation
         # to set the corret values for the following attributes.
         self._id = None
         self.is_vaccinated = None
         self.is_alive = None
-        self.infection = None
+        self.infected = None
 
 
-    def resolve_infection():
+    def did_survive_infection():
         # TODO:  Finish this method. Follow the instructions in the class documentation
-        # for resolve_infection.  
+        # for resolve_infection.  If person dies, set is_alive to False and return False.
+        # If person lives, set is_vaccinated = True, infected = None, return True.  
         pass

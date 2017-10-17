@@ -47,7 +47,7 @@ class Logger(object):
                     - The number of people that died on this specific time step.
                     - The total number of people infected in the population, including the newly
                         infected
-                    - The total number of dead, including those that died during this time step.  
+                    - The total number of dead, including those that died during this time step.
     '''
 
     def __init__(self, file_name):
@@ -61,6 +61,12 @@ class Logger(object):
         # immediately upon creation, to log the specific parameters of the simulation
         # as the first line of the file.  This line of metadata should be tab-delimited
         # (each item separated by a '\t' character).
+        # NOTE: Since this is the first method called, it will create the text file
+        # that we will store all logs in.  Be sure to use 'w' mode when you open the file.
+        # For all other methods, we'll want to use the 'a' mode to append our new log to the end,
+        # since 'w' overwrites the file.
+        # NOTE: Make sure to end every line with a '/n' character to ensure that each
+        # event logged ends up on a separate line!
         pass
 
     def log_interaction(self, person1, person2, did_infect=None,
@@ -70,8 +76,12 @@ class Logger(object):
         # should accomplish this by using the information from person1 (the infected person),
         # person2 (the person randomly chosen for the interaction), and the optional
         # keyword arguments passed into the method.  See documentation for more info
-        # on the format of the logs that this method should write. NOTE:  You'll need to think
-        # about how the booleans passed (or not passed) represent all the possible edge cases!
+        # on the format of the logs that this method should write.
+        # NOTE:  You'll need to think
+        # about how the booleans passed (or not passed) represent
+        # all the possible edge cases!
+        # NOTE: Make sure to end every line with a '/n' character to ensure that each
+        # event logged ends up on a separate line!
         pass
 
     def log_infection_survival(self, person, did_die_from_infection):
@@ -80,6 +90,8 @@ class Logger(object):
         # If the person survives, did_die_from_infection should be False.  Otherwise,
         # did_die_from_infection should be True.  See the documentation for more details
         # on the format of the log.
+        # NOTE: Make sure to end every line with a '/n' character to ensure that each
+        # event logged ends up on a separate line!
         pass
 
     def log_time_step(self, time_step_number):
@@ -89,4 +101,6 @@ class Logger(object):
         # step, it also logs a summary of what happened in that time step, including the number of
         # people infected, the number of people dead, etc.  You may want to create a helper class
         # to compute these statistics for you, as a Logger's job is just to write logs!
+        # NOTE: Make sure to end every line with a '/n' character to ensure that each
+        # event logged ends up on a separate line!
         pass

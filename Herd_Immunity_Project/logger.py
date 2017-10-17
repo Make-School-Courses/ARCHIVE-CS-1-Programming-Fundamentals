@@ -34,6 +34,20 @@ class Logger(object):
         - The format of the log should be "{person.ID} died from infection" or
             "{person.ID} survived infection."
         - Appends the results of the infection to the logfile.
+
+    log_time_step(self, time_step_number):
+        - Expects time_step_number as an Int.
+        - This method should write a log telling us when one time step ends, and
+            the next time step begins.  The format of this log should be:
+                "Time step {time_step_number} ended, beginning {time_step_number + 1}..."
+        - STRETCH CHALLENGE DETAILS:
+            - If you choose to extend this method, the format of the summary statistics logged
+                are up to you.  At minimum, it should contain:
+                    - The number of people that were infected during this specific time step.
+                    - The number of people that died on this specific time step.
+                    - The total number of people infected in the population, including the newly
+                        infected
+                    - The total number of dead, including those that died during this time step.  
     '''
 
     def __init__(self, file_name):
@@ -66,4 +80,13 @@ class Logger(object):
         # If the person survives, did_die_from_infection should be False.  Otherwise,
         # did_die_from_infection should be True.  See the documentation for more details
         # on the format of the log.
+        pass
+
+    def log_time_step(self, time_step_number):
+        # TODO: Finish this method.  This method should log when a time step ends, and a
+        # new one begins.  See the documentation for more information on the format of the log.
+        # NOTE: Stretch challenge opportunity! Modify this method so that at the end of each time
+        # step, it also logs a summary of what happened in that time step, including the number of
+        # people infected, the number of people dead, etc.  You may want to create a helper class
+        # to compute these statistics for you, as a Logger's job is just to write logs!
         pass

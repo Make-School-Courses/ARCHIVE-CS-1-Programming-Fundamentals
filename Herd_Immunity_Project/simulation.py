@@ -78,6 +78,14 @@ class Simulation(object):
         self.virus_name = virus_name
         self.mortality_rate = mortality_rate
         self.basic_repro_num = basic_repro_num
+        self.file_name = "{}_simulation_pop_{}_vp_{}_infected_{}.txt".format(
+            virus_name, population_size, vacc_percentage, initial_infected)
+
+        # TODO: Create a Logger object and bind it to self.logger.  You should use this
+        # logger object to log all events of any importance during the simulation.  Don't forget
+        # to call these logger methods in the corresponding parts of the simulation!
+        self.logger = None
+
         # This attribute will be used to keep track of all the people that catch
         # the infection during a given time step. We'll store each newly infected
         # person's .ID attribute in here.  At the end of each time step, we'll call
@@ -176,6 +184,7 @@ class Simulation(object):
             #     than basic_repro_num, random_person's ID should be appended to
             #     Simulation object's newly_infected array, so that their .infected
             #     attribute can be changed to True at the end of the time step.
+        # TODO: Remember to call self.logger.log_interaction() during this method!
         pass
 
     def _infect_newly_infected(self):
@@ -191,13 +200,13 @@ class Simulation(object):
 
 if __name__ == "__main__":
     params = sys.argv[1:]
-    pop_size = params[0]
-    vacc_percentage = params[1]
-    virus_name = params[2]
-    mortality_rate = params[3]
-    basic_repro_num = params[4]
+    pop_size = int(params[0])
+    vacc_percentage = float(params[1])
+    virus_name = str(params[2])
+    mortality_rate = float(params[3])
+    basic_repro_num = float(params[4])
     if len(params) == 6:
-        initial_infected = params[5]
+        initial_infected = int(params[5])
     else:
         initial_infected = 1
     simulation = Simulation(pop_size, vacc_percentage, virus_name, mortality_rate,

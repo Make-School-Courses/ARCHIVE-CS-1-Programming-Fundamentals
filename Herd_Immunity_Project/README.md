@@ -7,6 +7,27 @@ is vaccinated against this virus.
 This is just a rough README for now, to help unblock you so that you can get started
 started on the project.  I'll update this with more detail in the near future.
 
+### Goals
+
+* Finish the code in these files to create a working simulation that creates log files of major events.  
+* The rules of the simulation are as follows:
+  * You should get your data for virus name, mortality rate, and basic reproductive rate from the Guardian article we went over in class.  You can find a link to the article in the class slack channel.  
+  * During every time step of the simulation, every sick person should randomly interact with 100 other members of the population.  The chance of a sick person infecting a person that they interact with is the virus's basic reproductive rate.  For instance, if virus has a basic reproductive rate of 15, then, on average, a sick person should infect 15 of the 100 people they interact with during a given time step. However, there are caveats to this. A sick person only has a chance at infecting healthy, unvaccinated people they encounter.  
+  *  During their interactions with 100 random people from the population, an infected person cannot infect a vaccinated person.  This still counts as an interaction.  
+  * Additionally, an infected person cannot infect someone they encounter that is already infected.  This still counts as an interaction.
+  * At the end of a time step, an infected person will either die of the infection or get better.  The chance they will die is the percentage chance stored in mortality_rate.  That means that if the mortality rate of a virus is 35%, then every individual with the virus has a 35% chance of dying if they are infected.  For simplicity's sake, if the person does not die, we will consider them immune to the virus.  We will denote this by changing is_vaccinated to True when this happens.  
+  * Dead people can no longer be infected, either.  Any time an individual dies, we should also change their .infected attribute to False.  
+  * All state changes for a person should occur at the end of a time step, after all infected persons have finished all of their interactions.  During the interactions, we will make note of any new individuals infected on this turn.  After the interactions are over, we will change the .infected attribute of all newly infected individuals to True.  We will also resolve the states of all individuals that started the turn infected here, by determining if they die or survive the infection and changing the appropriate attributes to denote this.  
+  * Our simulation should output a logfile that contains a record of every interaction that occured during the simulation.  We will use this logfile to determine final statistics and answer questions about the simulation.
+* Once you have successfully run a simulation, use your python skills to answer the following questions about the simulation:
+  1. What were the inputs you gave the simulation? (Population size, percent vaccinated, virus name, mortality rate, basic reproductive rate)
+  1. What percentage of the population became infected at some point before the virus burned out?
+  1.  What percentage of the population died from the virus?
+  1.  Out of all interactions sick individuals had during the entire simulation, how many total interactions did we see where a vaccination saved a person from potentially becoming infected?
+
+When you have answered these questions, please put your answers in a file called 'answers.txt' and push this to your repo before slacking me the repo link!
+
+
 ### Getting Started
 
 To get started on this project, fork this repo and then clone the directory from *your own*
@@ -82,5 +103,4 @@ You'll find some of the smaller, individual stretch challenges contained with th
 
   *As always, I'm available on slack or over email if you have any questions or concerns. Good luck, and happy coding!*
 
-  --Mike 
-  
+  --Mike

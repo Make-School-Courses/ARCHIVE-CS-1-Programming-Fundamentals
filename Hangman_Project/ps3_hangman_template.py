@@ -16,10 +16,7 @@ def is_word_guessed(secret_word, letters_guessed):
     returns: boolean, True only if all the letters of secretWord are in lettersGuessed;
       False otherwise
     '''
-    for letter in secret_word:
-        if letter not in letters_guessed:
-            return False
-    return True
+
     # FILL IN YOUR CODE HERE...
 
 def get_guessed_word(secret_word, letters_guessed):
@@ -31,13 +28,7 @@ def get_guessed_word(secret_word, letters_guessed):
     in the word that the user has not yet guessed, shown an _ (underscore) instead.
     '''
     # FILL IN YOUR CODE HERE...
-    guessed_word = ""
-    for letter in secret_word:
-        if letter in letters_guessed:
-            guessed_word += letter + " "
-        else:
-            guessed_word += "_ "
-    return guessed_word
+
 
 
 
@@ -47,11 +38,7 @@ def get_available_letters(letters_guessed):
     returns: string, comprised of letters that represents what letters have not
       yet been guessed.
     '''
-    available_letters = list('abcdefghijklmnopqrstuvwxyz')
-    for letter in letters_guessed:
-        if letter in available_letters:
-            available_letters.remove(letter)
-    return available_letters
+    
 
 
 
@@ -75,7 +62,7 @@ def hangman(secret_word):
     '''
     # FILL IN YOUR CODE HERE...
 
-    
+
 #
 # secret_word = load_word()
 # hangman(load_word())

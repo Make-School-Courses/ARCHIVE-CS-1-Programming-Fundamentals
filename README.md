@@ -1,4 +1,6 @@
-# CS1--Programming Fundamentals
+# ARCHIVE - CS1--Programming Fundamentals
+
+## NOTE: This repo is no longer maintained
 
 ## Prerequisites
 
